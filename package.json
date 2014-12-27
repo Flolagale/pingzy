@@ -1,0 +1,47 @@
+{
+  "name": "pingzy",
+  "version": "0.0.0",
+  "description": "Ultra cheap website monitoring. Posts downtime notifications to Slack.",
+  "main": "index.js",
+  "bin": {
+    "pingzy": "./run-cli.js"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "start": "./run-cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flolagale/pingzy.git"
+  },
+  "keywords": [
+    "website monitoring",
+    "webapp monitoring",
+    "slack",
+    "notifications",
+    "downtime",
+    "cli"
+  ],
+  "author": "Florent Galland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flolagale/pingzy/issues"
+  },
+  "homepage": "https://github.com/Flolagale/pingzy",
+  "dependencies": {
+    "async": "^0.2.10",
+    "commander": "^2.1.0",
+    "forever-monitor": "^1.2.3",
+    "lodash": "^2.4.1",
+    "request": "^2.34.0",
+    "shelljs": "^0.2.6",
+    "winston": "^0.7.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-jsbeautifier": "~0.1.9",
+    "grunt-mocha-test": "^0.10.0",
+    "should": "^3.1.3"
+  }
+}
