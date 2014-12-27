@@ -17,7 +17,7 @@ var parseList = function (val) {
 program.version(pkg.version)
     .option('-u, --urls <items>', 'The urls to monitor separated by commas without spaces. (http://mysite.com,https://my.othersite.com', parseList)
     .option('-d, --slack-domain [Slack domain]', 'Your Slack domain as in http://domain.slack.com.')
-    .option('-t, --slack-token [Slack webhook token]', 'The Slack webhook token of your webhook integration.')
+    .option('-t, --slack-url [Slack webhook url]', 'The Slack webhook url of your webhook integration.')
     .option('-c, --slack-channel [Slack channel]', 'The Slack channel to post to. Default to #general.')
     .option('-i, --interval <n>', 'The interval in minutes between each check of the urls. Default to 1 minute.', parseInt)
     .option('-l, --log-file [file path]', "The log file path. Default to './.tmp/" + pkg.name + ".log'.")
@@ -40,8 +40,8 @@ if (!program.slackDomain) {
     process.exit(0);
 }
 
-if (!program.slackToken) {
-    console.log('Provide a Slack webhook token.');
+if (!program.slackUrl) {
+    console.log('Provide a Slack webhook url.');
     process.exit(0);
 }
 
