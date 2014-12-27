@@ -16,7 +16,7 @@ pingzy -h
 
     -h, --help                               output usage information
     -V, --version                            output the version number
-    -u, --urls <items>                       The urls to monitor separated by commas without spaces. (http://mysite.com,https://my.othersite.com
+    -u, --urls <items>                       The urls to monitor separated by commas without spaces. (http://mysite.com,https://my.othersite.com)
     -d, --slack-domain [Slack domain]        Your Slack domain as in http://domain.slack.com.
     -t, --slack-url [Slack webhook url]      The Slack webhook url of your webhook integration.
     -c, --slack-channel [Slack channel]      The Slack channel to post to. Default to #general.
