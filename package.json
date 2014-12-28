@@ -1,6 +1,6 @@
 {
   "name": "pingzy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ultra cheap website monitoring. Posts downtime notifications to Slack.",
   "main": "index.js",
   "bin": {
