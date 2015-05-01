@@ -1,0 +1,7 @@
+pingzy:
+  build: .
+  environment:
+  - URLS=http://jokund.com,http://mailin.io
+  - SLACK_DOMAIN=flabs
+  - SLACK_URL=https://hooks.slack.com/services/******/******/*********
+  - SLACK_CHANNEL=dev
