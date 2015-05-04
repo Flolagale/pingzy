@@ -30,3 +30,17 @@ Example usage:
 ```
 pingzy --urls http://jokund.com,http://mailin.io --slack-domain flabs  --slack-url https://hooks.slack.com/services/******/******/********* --slack-channel dev
 ```
+
+## Docker
+
+Build and run
+
+```bash
+docker build -t pingzy .
+docker run -e URLS=http://jokund.com,http://mailin.io -e SLACK_DOMAIN=flabs -e SLACK_URL=https://hooks.slack.com/services/******/******/********* -e SLACK_CHANNEL=dev
+```
+
+### Using docker-compose
+
+1. Edit docker-compose.yml file
+2. `docker-compose up`
